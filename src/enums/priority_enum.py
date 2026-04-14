@@ -10,3 +10,6 @@ class PriorityEnum(IntEnum):
     NORMAL = 3
     LOW = 2
     SUPER_LOW = 1
+
+
+PRIORITY_ENUM_ORDER: list[PriorityEnum] = sorted(PriorityEnum, key=lambda x: x.value, reverse=True)
